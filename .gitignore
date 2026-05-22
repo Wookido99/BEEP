@@ -17,7 +17,7 @@ myenv/
 .idea/
 
 # Data, checkpoints, caches, and experiment outputs
-data/
+data/MNIST/
 logs/
 results/
 # param/

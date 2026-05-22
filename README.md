@@ -5,9 +5,10 @@ pip install -r requirements.txt
 
 ## Data and pretrained artifacts
 
-The dataset files are not included in this GitHub repository. Please download
-the datasets separately and place them under `data/` before running the
-experiments.
+Most dataset files are included in this GitHub repository. The only exception
+is the MNIST dataset, because one of its processed files exceeds GitHub's
+regular 100 MB file size limit. Please download the MNIST dataset separately
+and place it under `data/MNIST/` before running MNIST experiments.
 
 Base explainers have already been pretrained, and their artifacts are included
 in this repository either as parameters or cached scores:
@@ -20,11 +21,15 @@ For smoother reproduction, pretrained BEEP parameters are also included:
 
 - `param/`: pretrained model and BEEP parameters
 
-After downloading the datasets, the expected project structure is:
+After downloading MNIST, the expected project structure is:
 
 ```
 BEEP/
 ├── data/
+│   ├── BA3/
+│   ├── FC/
+│   ├── MUTAG/
+│   └── MNIST/
 ├── param/
 ├── best_base_param/
 ├── edge_score_cache_eigsearch/
