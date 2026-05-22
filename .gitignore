@@ -20,9 +20,9 @@ myenv/
 data/
 logs/
 results/
-param/
-best_base_param/
-edge_score_cache*/
+# param/
+# best_base_param/
+# edge_score_cache*/
 
 # Local OS files
 .DS_Store

@@ -32,11 +32,9 @@ BEEP/
 
 Download link: `TODO: add external file archive link`
 
-- `dataset`: name of the dataset (`MUTAG`, `BA3`, `FC`, `MNIST`)
-- `explainer_name`: name of the explainer module (`beep`)
-- `base_explainer`: name of the base explainer used to generate guidance scores
-  (`pgexplainer`, `proxyexplainer`, `mixupexplainer`, `gsat`, `confexplainer`,
-  `goat`, `eigsearch`)
+- dataset: name of the dataset (MUTAG, BA3, FC, MNIST)
+- explainer_name: name of the explainer module (beep)
+- base_explainer: name of the base explainer used to generate guidance scores (pgexplainer, proxyexplainer, mixupexplainer, gsat, confexplainer, goat, eigsearch)
 
 If you want to run the experiment with a specific random seed:
 ```
