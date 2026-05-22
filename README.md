@@ -15,8 +15,6 @@ in this repository either as parameters or cached scores:
 - `best_base_param/`: pretrained base explainer parameters
 - `edge_score_cache_eigsearch/`: cached `eigsearch` edge scores
 - `edge_score_cache_goat/`: cached `goat` edge scores
-- `edge_score_cache_goat_best/`: cached `goat` edge scores used for the best
-  configuration
 
 For smoother reproduction, pretrained BEEP parameters are also included:
 
@@ -31,7 +29,6 @@ BEEP/
 ├── best_base_param/
 ├── edge_score_cache_eigsearch/
 ├── edge_score_cache_goat/
-└── edge_score_cache_goat_best/
 ```
 
 - dataset: name of the dataset (MUTAG, BA3, FC, MNIST)
