@@ -5,11 +5,6 @@ pip install -r requirements.txt
 
 ## Data and pretrained artifacts
 
-Most dataset files are included in this GitHub repository. The only exception
-is the MNIST dataset, because one of its processed files exceeds GitHub's
-regular 100 MB file size limit. Please download the MNIST dataset separately
-and place it under `data/MNIST/` before running MNIST experiments.
-
 Base explainers have already been pretrained, and their artifacts are included
 in this repository either as parameters or cached scores:
 
