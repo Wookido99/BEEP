@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+myenv/
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Data, checkpoints, caches, and experiment outputs
+data/
+logs/
+results/
+param/
+best_base_param/
+edge_score_cache*/
+
+# Local OS files
+.DS_Store
+Thumbs.db

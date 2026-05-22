@@ -1,0 +1,68 @@
+in_dim: 4
+num_cls: 3
+pool_type: "sum"
+use_jk: true
+positive_prior: 0.5
+
+beep:
+  seed: 42
+  epochs: 50
+  base_explainer: "pgexplainer"
+  batch_size: 16
+  nlayers: 4
+  hidden: 64
+  lr: 0.001
+  size_reg: 1.0
+  ent_reg: 1.0
+  temp_0: 5.0
+  temp_1: 2.0
+  round1_epochs: 200
+  round1_lr: 0.001
+  std_multiplier: 1.0
+  alpha0: 0.125
+  c: 1.5
+  w: 1.0
+  base_hparams:
+    pgexplainer:
+      alpha0: 0.125
+      c: 1.5
+      w: 1.0
+    gsat:
+      alpha0: 0.075
+      c: 0.5
+      w: 3.0
+    mixupexplainer:
+      alpha0: 0.2
+      c: 0.25
+      w: 3.0
+    proxyexplainer:
+      alpha0: 0.075
+      c: 0.5
+      w: 1.0
+    confexplainer:
+      alpha0: 0.05
+      c: 0.25
+      w: 3.0
+    goat:
+      alpha0: 0.05
+      c: 2.0
+      w: 1.0
+      base_score_cache_dir: "edge_score_cache_goat"
+      is_undirected: true
+      goat_score_transform: "abs"
+      goat_undirected_aggr: "max"
+    eigsearch:
+      alpha0: 0.1
+      c: 0.5
+      w: 5.0
+      base_score_cache_dir: "edge_score_cache_eigsearch"
+      is_undirected: true
+      eig_epsilon: 0.05
+      eig_sparsity: 0.5
+      eig_enable_search: true
+      eig_max_edges: 200
+      eig_search_max_edges: 200
+  vae_thre: 0.7
+  model: "GIN"
+  enable_second_guided: true
+  second_std_multiplier: 1.0
