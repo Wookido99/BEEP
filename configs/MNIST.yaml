@@ -50,7 +50,7 @@ beep:
       alpha0: 0.075
       c: 1.5
       w: 3.0
-      base_score_cache_dir: "edge_score_cache_goat_best"
+      base_score_cache_dir: "edge_score_cache_goat"
       is_undirected: true
       goat_score_transform: "negative"
       goat_undirected_aggr: "max"
