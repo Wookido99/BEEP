@@ -3,22 +3,26 @@ Before running any experiments, make sure to install the required packages:
 pip install -r requirements.txt
 ```
 
-## External files
+## Data and pretrained artifacts
 
-The following directories are not included in this GitHub repository because
-they contain datasets, cached edge scores, pretrained parameters, or other
-large experiment artifacts:
+The dataset files are not included in this GitHub repository. Please download
+the datasets separately and place them under `data/` before running the
+experiments.
 
-- `best_base_param/`
-- `data/`
-- `edge_score_cache_eigsearch/`
-- `edge_score_cache_goat/`
-- `edge_score_cache_goat_best/`
-- `param/`
+Base explainers have already been pretrained, and their artifacts are included
+in this repository either as parameters or cached scores:
 
-These files will be provided separately as a downloadable archive. After
-downloading the archive, extract it into the project root so that the directory
-structure matches the paths above:
+- `best_base_param/`: pretrained base explainer parameters
+- `edge_score_cache_eigsearch/`: cached `eigsearch` edge scores
+- `edge_score_cache_goat/`: cached `goat` edge scores
+- `edge_score_cache_goat_best/`: cached `goat` edge scores used for the best
+  configuration
+
+For smoother reproduction, pretrained BEEP parameters are also included:
+
+- `param/`: pretrained model and BEEP parameters
+
+After downloading the datasets, the expected project structure is:
 
 ```
 BEEP/
@@ -29,8 +33,6 @@ BEEP/
 ├── edge_score_cache_goat/
 └── edge_score_cache_goat_best/
 ```
-
-Download link: `TODO: add external file archive link`
 
 - dataset: name of the dataset (MUTAG, BA3, FC, MNIST)
 - explainer_name: name of the explainer module (beep)
