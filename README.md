@@ -16,20 +16,6 @@ For smoother reproduction, pretrained BEEP parameters are also included:
 
 - `param/`: pretrained model and BEEP parameters
 
-After downloading MNIST, the expected project structure is:
-
-```
-BEEP/
-├── data/
-│   ├── BA3/
-│   ├── FC/
-│   ├── MUTAG/
-│   └── MNIST/
-├── param/
-├── best_base_param/
-├── edge_score_cache_eigsearch/
-├── edge_score_cache_goat/
-```
 
 - dataset: name of the dataset (MUTAG, BA3, FC, MNIST)
 - explainer_name: name of the explainer module (beep)
