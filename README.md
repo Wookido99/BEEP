@@ -8,5 +8,5 @@ pip install -r requirements.txt
 
 If you want to run the experiment with a specific random seed:
 ```
-python main.py --dataset MUTAG --explainer_name beep --seed 42
+python main.py --dataset MUTAG --explainer_name beep --base_explainer pgexplainer --seed 42
 ```
