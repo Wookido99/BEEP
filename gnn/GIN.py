@@ -50,7 +50,6 @@ class GINConv(MessagePassing):
         return self.nn(out)
 
     def message(self, x_j: Tensor, edge_weight: OptTensor = None) -> Tensor:
-        # edge_weight가 None이 아닐 때 edge_weight를 곱해줍니다.
         return x_j if edge_weight is None else edge_weight.view(-1, 1) * x_j
 
     def message_and_aggregate(self, adj_t: SparseTensor,
